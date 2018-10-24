@@ -1,0 +1,64 @@
+#startnav{
+    background-color: #696c76;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 5px;
+    color: white;
+}
+#startnav .container .navbar-header a{
+    font-size: 300%;
+    color: white;
+    margin-top: 10px;
+}
+#startnav .container .nav{
+    margin-top: 10px;
+}
+.navbar .container form #forgotPw{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: white;
+}
+#services{
+    font-size: 150%;
+}
+#homelinks{
+    font-size: 150%;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+#footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 150%;
+    background-color: #696c76;
+    padding: 5px;
+    color: white;
+}
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    color: black;
+}
+
+#lognav{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #696c76;
+}
+#lognav .nav a{
+    color: white ;
+}
+#lognav .nav a:hover{
+    color: black ;
+}
+#lognav .nav .dropdown-menu a{
+    color: black;
+}
