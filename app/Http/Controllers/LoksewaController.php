@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use DB;
+use App\Loksewa;
+use App\LoksewaQuestion;
 
 class LoksewaController extends Controller
 {
@@ -15,7 +17,8 @@ class LoksewaController extends Controller
      */
     public function index()
     {
-        //
+        $sets= Loksewa::orderBy('created_at','desc')->paginate(10);
+        return view('loksewa.index')->with('sets',$sets);
     }
 
     /**
@@ -47,7 +50,8 @@ class LoksewaController extends Controller
      */
     public function show($id)
     {
-        //
+        $questions=LoksewaQuestion::orderBy('questionNum','asc')->where('set',$id)->get();
+        return view('loksewa.show')->with('questions',$questions);
     }
 
     /**
